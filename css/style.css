@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, .logo 
+{
+    font-family: "Montserrat", sans-serif;
+}
+/* start-home */
+#Home
+{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center ;
+    background-size: cover;
+}
+a
+{
+    all: unset;
+    cursor: pointer;
+}
+.logo
+{
+    font-weight: 600;
+}
+.bg-opacity-60
+{
+    background-color: rgba(0, 0, 0, .6);
+}
+.home-content h1::after
+{
+    content: " |";
+    animation: typing 1.7s infinite;
+    font-weight: 400;
+
+}
+@keyframes typing
+{
+    0%{content: " D|";}
+    5%{content: " De|";}
+    10%{content: " Des|";}
+    15%{content: " Desi|";}
+    20%{content: " Desig|";}
+    25%{content: " Design|";}
+    30%{content: " Designe|";}
+    35%{content: " Designer|";}
+    35%{content: " Designer|";}
+    40%{content: " Designe|";}
+    45%{content: " Design|";}
+    50%{content: " Desig|";}
+    55%{content: " Desi|";}
+    60%{content: " Des|";}
+    65%{content: " De|";}
+    70%{content: " D|";}
+    75%{content: "|";}
+    
+}
+.home-content h5
+{
+    font-weight: 600;
+}
+/* end-home */
+/* start-About */
+.shade
+{
+   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1) inset;
+ 
+}
+.about-img::after
+{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: -10px;
+    bottom: -35px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;  
+}
+.about-img
+{
+    position: relative;
+    
+}
+
+
+
+/* #About span
+{
+    color: #999;
+}
+#About p span
+{
+    color: RGB(116, 129, 130);
+
+}
+
+#About p
+{
+    color: #748182;
+} */
+.w-95
+{
+    width: 95%;
+}
+.w-90
+{
+    width: 90%;
+}
+.about-bar1,.about-bar2,.about-bar3
+{
+    position: relative;
+}
+.about-bar1::after
+{
+    content: "95%";
+    position: absolute;
+    right: 0;
+}
+.about-bar2::after
+{
+    content: "80%";
+    position: absolute;
+    right: 0;
+}
+.about-bar3::after
+{
+    content: "90%";
+    position: absolute;
+    right: 0;
+}
+.about-bars h6
+{
+    font-size: 13px;
+}
+/* #About .bar
+{
+    background-color: #ebebeb;
+
+} */
+.about-buttons .button
+{
+    border: black 1px solid;
+    font-size: 13px;
+
+}
+/* end-About */
+/* start services */
+.dot h3::after
+{
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: -1; */
+    
+}
+.dot h3
+{
+    position: relative;
+    display: inline-block;
+}
+
+
+.services-item i
+{
+
+    display: inline-block;
+
+
+}
+.services-item
+{
+   box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+ 
+}
+.services-item i
+{
+
+ color: black;
+ background-color: #f7f7f7;
+ transition: .6s ;
+ 
+}
+.services-item:hover i
+{
+ background-color: rgba(0, 0, 0, .6);
+ color: white;
+}
+/* start works */
+#Works .layer
+{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    opacity: 0;
+    transition: .6s;
+    overflow: hidden;
+    transform: scale(.95);
+}
+#Works .layer:hover
+{
+    opacity: 1;
+    transform: scale(1);
+}
+#Works .layer i
+{
+    color: white;
+    background-color: #343434;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: none;
+}
+.nav-tabs .nav-link{
+    border: none;
+    color: black;
+}
+#Works ul
+{
+    border: none;
+}
+.client-img
+{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-indicators [data-bs-target]
+{
+    width: 10px;
+    height: 10px;
+    background-color: #343434;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: .4;
+}
+.carousel-indicators .active
+{
+   opacity: .6;
+}
+#Team .layer
+{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    opacity: 0;
+    transition: .4s;
+    overflow: hidden;
+    transform: scale(.5) ;
+
+    
+}
+#Team .team-hov:hover .layer
+{
+    opacity: .9;
+    transform: scale(1) ;
+
+}
+#Team .layer i
+{
+    color: white;
+    background-color: #343434;
+}
+#Team .team-hov1:hover img
+{
+    transform: scale(1.2);
+}
+#Team .team-hov1{
+    overflow: hidden;
+}
+#Team .team-hov i:hover 
+{
+    background-color: white;
+    color: black;
+
+}
+.sec i
+{
+    background-color: #f4f4f4;
+}
+.sec:hover i
+{
+ background-color: rgba(0, 0, 0, .6);
+ color: white;
+}
